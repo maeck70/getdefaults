@@ -68,7 +68,7 @@ func BoolOrDefault(value interface{}, default_value bool) bool {
 	case int:
 		return v != 0
 	default:
-		log.Fatalf("BoolOrDefault: Cannot evaluate %T for boolean", v)
+		log.Printf("BoolOrDefault: Cannot evaluate %T for boolean\n", v)
 	}
 	return default_value
 }
